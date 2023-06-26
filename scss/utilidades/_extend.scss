@@ -1,0 +1,65 @@
+//extend//
+//import//
+@import "../utilidades/variables";
+%parrafo{
+    color: $color-secundario-1;
+    font-family: $tipografia;
+    font-size: $veinte;
+    background-color: $color-secundario-2;
+    border: $borde;
+    border-radius: $cinco;
+    box-shadow: $sombra;
+    text-align: $centrado;
+    padding: $cinco;
+}
+%experienciahome{
+    margin: $cinco;
+    background-position: $centrado;
+    height: 320px;
+    background-size: cover;
+    border-radius: $diez;
+    box-shadow: $sombra;
+}
+%tamañototal{
+    height: $total;
+    width: $total;
+}
+%experienciavarias{
+    color: $color-secundario-1;
+    font-family: $tipografia;
+    font-size: $veinte;
+    background-color: $color-secundario-2;
+    border: $borde;
+    border-radius: $cinco;
+    box-shadow: $sombra;
+    width: 90%;
+    text-align: $centrado;
+}
+%patiocerveceroimg{
+    margin: $cinco;
+    background-position: $centrado;
+    height: 300px;
+    background-size: cover;
+    border-radius: $diez;
+    box-shadow: $sombra-tres;
+}
+%oktoberfestimg{
+    margin: $cinco;
+    background-position: $centrado;
+    height: 300px;
+    background-size: cover;
+    border-radius: $diez;
+    box-shadow: $sombra-tres;
+}
+%sanpatricioimg{
+    margin: $cinco;
+    background-position: $centrado;
+    height: 300px;
+    background-size: cover;
+    border-radius: $diez;
+    box-shadow: $sombra-tres;
+}
+%cervezaimguno{
+    height: 350px;
+    margin-top: 35px;
+}

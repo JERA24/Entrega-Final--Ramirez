@@ -1,0 +1,109 @@
+//import//
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+//estilos home//
+/*estilo para pantallas de celulares -home-*/
+.Home-titulo .Don-Arnulfo{
+    text-align: $centrado;
+}
+.Don-Arnulfo p{
+    margin: $diez;
+    color: $color-principal-2;
+    font-family: $tipografia;
+    font-weight: $grosor;
+    font-size: 22px;
+
+    animation-name: titulo;
+    animation-duration: 2s;
+}
+.Nosotros{
+    @extend %tamañototal;
+}
+.Nosotros-home .Nosotros .imgNosotros-home{
+    background-image: url(../img/fabrica1.jpg.png);
+    @extend %experienciahome;
+}
+.Nosotros-home p{
+    @extend %parrafo;
+    margin: 10px 5px;
+}
+.Experiencias-home .SanPatricio{
+    width: $total;
+    height: $total;
+}
+.Experiencias-home .SanPatricio .imgSanPatricio-home{
+    background-image: url(../img/San-patrick1.png);
+    @extend %experienciahome;
+}
+.SanPatricio p{
+    @extend %parrafo;
+    margin: 2px 30px;
+}
+.PatioCervecero p{
+    @extend %parrafo;
+    margin: 2px 30px;
+}
+.Experiencias-home .PatioCervecero{
+    display: $no;
+}
+a{
+    @include vermas;
+}
+/*esilos para pantallas de tablets -home-*/
+@media screen and (min-width:600px){
+    .Nosotros-home .Nosotros .imgNosotros-home{
+        margin: $diez;
+        background-position: center;
+        height: $cuatrovente;
+    }
+    .Experiencias-home{
+        display: flex;
+        flex-flow: row;
+    }
+    .Experiencias-home .SanPatricio{
+        width: $mitad;
+    }
+    .Experiencias-home .PatioCervecero{
+        width: $mitad;
+        display: block;
+    }
+    .Experiencias-home .PatioCervecero .imgPatioCervecero{
+        background-image: url(../img/patiocerveceroHome.png);
+        margin: $cinco;
+        background-position: $centrado;
+        height: 320px;
+        background-size: cover;
+        border-radius: $diez;
+        box-shadow: $sombra-dos;
+    }
+    .pie-pagina .Derechos{
+        width: $trescuartos;
+    }
+    .pie-pagina .iconos{
+        display: $bloque;
+    }
+}
+/*esilos para pantallas de desktop -home-*/
+
+@media screen and (min-width:1024px){
+    .estilo-lista:hover{
+        transform: scale(0.8);
+    }
+    .Nosotros-home .Nosotros .imgNosotros-home{
+        margin: $diez;
+        background-position: center;
+        height: 650px;
+        margin: 20px 70px;
+    }
+    .Experiencias-home{
+        height: $total;
+    }
+    .Experiencias-home .SanPatricio .imgSanPatricio-home{
+        height: 400px;
+    }
+    .pie-pagina{
+        align-items: $centrado;
+    }
+}

@@ -1,0 +1,129 @@
+//import//
+@import "../utilidades/variables";
+
+//mixin//
+@mixin fondo-pag{
+    background-image: $color-fondo;
+}
+@mixin navcolor{
+    background-color: $color-principal-2;
+}
+@mixin logotac{
+    position: $relativo;
+    bottom: 2px;
+    height: 150px;
+}
+@mixin botoncolor{
+    background-color: $color-principal-1;
+}
+@mixin listastilo{
+    text-align: $centrado;
+    margin: 5px 10px;
+    font-family: $tipografia;
+    font-weight: $grosor;
+    font-size: 25px;
+    color: $color-principal-2;
+    background-color: $color-principal-1;
+    box-shadow: $sombra-dos;
+    border-radius: $cinco;
+}
+@mixin wpp{
+    position: $fixed;
+    bottom: 80px;
+    right: $veinte;
+}
+@mixin donarnul-home{
+    text-align: $centrado;
+    margin: $veinte;
+    color: $color-principal-2;
+    font-family: $tipografia;
+    font-weight: $grosor;
+    font-size: 70px;
+}
+@mixin subtitulos{
+    text-align: $centrado;
+    color: $color-principal-2;
+    font-family: $tipografia;
+    font-weight: $grosor;
+    font-size: $cincuenta;
+}
+@mixin piepagina{
+    color: $color-principal-1;
+    text-align: $centrado;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color-principal-2;
+    padding: 8px;
+}
+@mixin main{
+    display: flex;
+    align-items: $centrado;
+    flex-direction: column;
+}
+@mixin vermas{
+    padding: $cinco;
+    margin-top: $cincuenta;
+    margin-bottom: $diez;
+    text-decoration: $no;
+    color: $color-principal-2;
+    font-size: 18px;
+    border: $borde;
+    border-radius: $diez;
+    box-shadow: $sombra;
+}
+@mixin bannersanto{
+    height: $total;
+    width: $total;
+    background-size: $total;
+    background-repeat: no-repeat;
+    background-position: $centrado;
+    background-image: url(../img/SanArnulfo-Banner.png);
+    text-align: $centrado;
+}
+@mixin bannersantop{
+    margin-top: 55%;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-radius: $diez;
+    color: $color-secundario-1;
+    font-family: $tipografia;
+    font-weight: $grosor;
+    font-size: 25px;
+    background-color: $color-secundario-2;
+    border: $borde-dos;
+    box-shadow: $borde-tres;
+}
+@mixin formulario{
+    margin-top: $cincuenta;
+    align-items: $centrado;
+    width: 350px;
+    height: 200px;
+    color: $color-secundario-1;
+    font-family: $tipografia;
+    font-size: 18px;
+    background-color: $color-secundario-2;
+    border: 2px solid black;
+    border-radius: $cinco;
+}
+@mixin cervezas{
+    background-color: $color-secundario-2;
+    text-align: $centrado;
+    border: $borde;
+    box-shadow: $sombra;
+    padding: 2px;
+    width: 98%;
+    margin: 10px 0px;
+}
+@mixin cervezasp{
+    color: $color-secundario-1;
+    font-family: $tipografia;
+    font-size: $veinte;
+    background-color: $color-secundario-2;
+    margin: 20px 20px;
+    border: $borde;
+    box-shadow: $sombra;
+    border-radius: $cinco;
+}
+
+

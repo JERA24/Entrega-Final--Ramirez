@@ -1,0 +1,861 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilos generales*/
+body {
+  background-image: linear-gradient(goldenrod, #d29703); }
+
+.nav-color {
+  background-color: #003a00; }
+
+.logo-principal {
+  position: relative;
+  bottom: 2px;
+  height: 150px; }
+
+.color-boton {
+  background-color: goldenrod; }
+
+.estilo-lista {
+  text-align: center;
+  margin: 5px 10px;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #003a00;
+  background-color: goldenrod;
+  box-shadow: 2px 2px gold;
+  border-radius: 5px; }
+
+.estilo-lista:hover {
+  transform: scale(0.9); }
+
+h1 {
+  text-align: center;
+  margin: 20px;
+  color: #003a00;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-weight: bolder;
+  font-size: 70px;
+  animation-name: titulo;
+  animation-duration: 2s; }
+
+@keyframes titulo {
+  0% {
+    transform: translate(100%); } }
+
+.Subtitulo {
+  text-align: center;
+  color: #003a00;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+  animation-name: subtitulos;
+  animation-duration: 5s; }
+
+@keyframes subtitulos {
+  0% {
+    transform: translate(100%); } }
+
+.fixed {
+  position: fixed;
+  bottom: 80px;
+  right: 20px; }
+
+.pie-pagina {
+  color: goldenrod;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #003a00;
+  padding: 8px; }
+
+.pie-pagina .Derechos {
+  width: 100%; }
+
+.pie-pagina .iconos {
+  display: none; }
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.Nosotros-home p, .SanPatricio p, .PatioCervecero p {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  box-shadow: 2px 2px #003a00;
+  text-align: center;
+  padding: 5px; }
+
+.Nosotros-home .Nosotros .imgNosotros-home, .Experiencias-home .SanPatricio .imgSanPatricio-home {
+  margin: 5px;
+  background-position: center;
+  height: 320px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px #003a00; }
+
+.Nosotros, .Historia-santo .Santo-patrono {
+  height: 100%;
+  width: 100%; }
+
+.Experiencia-patio, .Experiencia-oktoberfest, .Experiencia-Sanpatricio {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  box-shadow: 2px 2px #003a00;
+  width: 90%;
+  text-align: center; }
+
+.Patio-cervecero .Patio-uno, .Patio-cervecero .Patio-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.Oktoberfest .Oktober-uno, .Oktoberfest .Oktober-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.San-patricio .Patricio-uno, .San-patricio .Patricio-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.Cervezas .producto-dos img, .Cervezas .producto-tres img {
+  height: 350px;
+  margin-top: 35px; }
+
+/*estilo para pantallas de celulares -home-*/
+.Home-titulo .Don-Arnulfo {
+  text-align: center; }
+
+.Don-Arnulfo p {
+  margin: 10px;
+  color: #003a00;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-weight: bolder;
+  font-size: 22px;
+  animation-name: titulo;
+  animation-duration: 2s; }
+
+.Nosotros-home .Nosotros .imgNosotros-home {
+  background-image: url(../img/fabrica1.jpg.png); }
+
+.Nosotros-home p {
+  margin: 10px 5px; }
+
+.Experiencias-home .SanPatricio {
+  width: 100%;
+  height: 100%; }
+
+.Experiencias-home .SanPatricio .imgSanPatricio-home {
+  background-image: url(../img/San-patrick1.png); }
+
+.SanPatricio p {
+  margin: 2px 30px; }
+
+.PatioCervecero p {
+  margin: 2px 30px; }
+
+.Experiencias-home .PatioCervecero {
+  display: none; }
+
+a {
+  padding: 5px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #003a00;
+  font-size: 18px;
+  border: 2px solid #003a00;
+  border-radius: 10px;
+  box-shadow: 2px 2px #003a00; }
+
+/*esilos para pantallas de tablets -home-*/
+@media screen and (min-width: 600px) {
+  .Nosotros-home .Nosotros .imgNosotros-home {
+    margin: 10px;
+    background-position: center;
+    height: 420px; }
+  .Experiencias-home {
+    display: flex;
+    flex-flow: row; }
+  .Experiencias-home .SanPatricio {
+    width: 50%; }
+  .Experiencias-home .PatioCervecero {
+    width: 50%;
+    display: block; }
+  .Experiencias-home .PatioCervecero .imgPatioCervecero {
+    background-image: url(../img/patiocerveceroHome.png);
+    margin: 5px;
+    background-position: center;
+    height: 320px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px gold; }
+  .pie-pagina .Derechos {
+    width: 75%; }
+  .pie-pagina .iconos {
+    display: block; } }
+
+/*esilos para pantallas de desktop -home-*/
+@media screen and (min-width: 1024px) {
+  .estilo-lista:hover {
+    transform: scale(0.8); }
+  .Nosotros-home .Nosotros .imgNosotros-home {
+    margin: 10px;
+    background-position: center;
+    height: 650px;
+    margin: 20px 70px; }
+  .Experiencias-home {
+    height: 100%; }
+  .Experiencias-home .SanPatricio .imgSanPatricio-home {
+    height: 400px; }
+  .pie-pagina {
+    align-items: center; } }
+
+.Nosotros-home p, .SanPatricio p, .PatioCervecero p {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  box-shadow: 2px 2px #003a00;
+  text-align: center;
+  padding: 5px; }
+
+.Nosotros-home .Nosotros .imgNosotros-home, .Experiencias-home .SanPatricio .imgSanPatricio-home {
+  margin: 5px;
+  background-position: center;
+  height: 320px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px #003a00; }
+
+.Nosotros, .Historia-santo .Santo-patrono {
+  height: 100%;
+  width: 100%; }
+
+.Experiencia-patio, .Experiencia-oktoberfest, .Experiencia-Sanpatricio {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  box-shadow: 2px 2px #003a00;
+  width: 90%;
+  text-align: center; }
+
+.Patio-cervecero .Patio-uno, .Patio-cervecero .Patio-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.Oktoberfest .Oktober-uno, .Oktoberfest .Oktober-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.San-patricio .Patricio-uno, .San-patricio .Patricio-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.Cervezas .producto-dos img, .Cervezas .producto-tres img {
+  height: 350px;
+  margin-top: 35px; }
+
+/*estilo para pantallas de celulares -nosotros-*/
+.Banner-nosotros {
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/SanArnulfo-Banner.png);
+  text-align: center; }
+
+.Banner-nosotros p {
+  margin-top: 55%;
+  margin-left: 45px;
+  margin-right: 45px;
+  border-radius: 10px;
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 1px solid goldenrod;
+  box-shadow: 2px 2px goldenrod; }
+
+.Equipo-arnulfo .Duenios-arnulfo {
+  height: 100%;
+  width: 100%; }
+
+.Equipo-arnulfo .Duenios-arnulfo .Amigos {
+  background-image: url(../img/Creadores-amigos.png);
+  margin: 5px;
+  height: 250px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px #003a00; }
+
+.Equipo-arnulfo p {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px 30px;
+  padding: 5px; }
+
+.Relleno {
+  width: 90%;
+  height: 100%; }
+
+.Relleno .Fabrica-dos p {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 25px;
+  background-color: rgba(0, 58, 0, 0.408);
+  text-align: center;
+  padding: 5px;
+  border: 2px solid #003a00;
+  border-radius: 10px;
+  box-shadow: 2px 2px #003a00;
+  margin: 30px 15px; }
+
+.Equipo-arnulfo .Fabrica {
+  display: none; }
+
+.Santo {
+  margin-top: 25px; }
+
+.Historia-santo .Santo-patrono .Img-arnulfo {
+  background-image: url(../img/Arnulfo-Tomando.png);
+  margin: 5px;
+  height: 400px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px #003a00; }
+
+.Historia-santo p {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px 5px; }
+
+/*estilo para pantallas de tablets -nosotros- */
+@media screen and (min-width: 600px) {
+  .Equipo-arnulfo {
+    height: 100%;
+    display: flex;
+    flex-flow: row; }
+  .Equipo-arnulfo .Duenios-arnulfo {
+    width: 100%; }
+  .Equipo-arnulfo .Fabrica {
+    display: block;
+    width: 100%; }
+  .Equipo-arnulfo .Duenios-arnulfo .Amigos {
+    background-position: center;
+    height: 350px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 2px 2px #003a00; }
+  .Equipo-arnulfo .Fabrica .Fabrica-uno {
+    background-position: center;
+    background-image: url(../img/nosotrosHome.jpg);
+    margin: 5px;
+    height: 350px;
+    background-size: cover;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 2px 2px #003a00; }
+  .Relleno .Fabrica-dos .Relajate {
+    background-position: center;
+    background-image: url(../img/fabrica2.png);
+    margin-top: 170px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px #003a00; }
+  .Relleno .Fabrica-dos p {
+    margin-top: 5px; }
+  .Historia-santo {
+    height: 100%;
+    align-items: center; }
+  .Historia-santo p {
+    width: 500px; }
+  .Historia-santo .Santo-patrono .Img-arnulfo {
+    margin: 5px;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px #003a00; } }
+
+/* estilos para pantallas de desktop -nosotros- */
+@media screen and (min-width: 1024px) {
+  .Banner-nosotros {
+    height: 750px;
+    background-position: top; }
+  .Banner-nosotros p {
+    margin-top: 700px;
+    margin-left: 200px;
+    margin-right: 200px; }
+  .Equipo-arnulfo {
+    height: 600px; }
+  .Relleno .Fabrica-dos .Relajate {
+    height: 450px; } }
+
+.Nosotros-home p, .SanPatricio p, .PatioCervecero p {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  box-shadow: 2px 2px #003a00;
+  text-align: center;
+  padding: 5px; }
+
+.Nosotros-home .Nosotros .imgNosotros-home, .Experiencias-home .SanPatricio .imgSanPatricio-home {
+  margin: 5px;
+  background-position: center;
+  height: 320px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px #003a00; }
+
+.Nosotros, .Historia-santo .Santo-patrono {
+  height: 100%;
+  width: 100%; }
+
+.Experiencia-patio, .Experiencia-oktoberfest, .Experiencia-Sanpatricio {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  box-shadow: 2px 2px #003a00;
+  width: 90%;
+  text-align: center; }
+
+.Patio-cervecero .Patio-uno, .Patio-cervecero .Patio-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.Oktoberfest .Oktober-uno, .Oktoberfest .Oktober-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.San-patricio .Patricio-uno, .San-patricio .Patricio-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.Cervezas .producto-dos img, .Cervezas .producto-tres img {
+  height: 350px;
+  margin-top: 35px; }
+
+/*estilo para pantallas de celulares -experiencias-*/
+.Patio-cervecero {
+  margin-top: 5px;
+  width: 350px;
+  height: 320px; }
+
+.Patio-cervecero .Patio-uno {
+  background-image: url(../img/patiocervecero-dos.png);
+  display: none; }
+
+.Patio-cervecero .Patio-dos {
+  background-image: url(../img/patiocerveceroHome.png); }
+
+.Oktoberfest {
+  margin-top: 50px;
+  width: 350px;
+  height: 320px; }
+
+.Oktoberfest .Oktober-uno {
+  background-image: url(../img/october-fest-dos.png); }
+
+.Oktoberfest .Oktober-dos {
+  background-image: url(../img/october-fest.png);
+  display: none; }
+
+.San-patricio {
+  margin-top: 50px;
+  width: 350px;
+  height: 320px; }
+
+.San-patricio .Patricio-uno {
+  background-image: url(../img/San-patrick1.png);
+  display: none; }
+
+.San-patricio .Patricio-dos {
+  background-image: url(../img/Sanpatricio-fiesta.png); }
+
+/* estilos para pantallas de tablets -experiencias- */
+@media screen and (min-width: 600px) {
+  .Patio-cervecero {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px; }
+    .Patio-cervecero .Patio-uno {
+      height: 350px;
+      width: 48%;
+      position: relative;
+      background-position: center;
+      display: block; }
+    .Patio-cervecero .Patio-dos {
+      height: 350px;
+      bottom: 76%;
+      left: 50%;
+      width: 48%;
+      position: relative;
+      background-position: center; }
+  .Experiencia-patio {
+    width: 100%;
+    margin-bottom: 50px; }
+  .Oktoberfest {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px; }
+    .Oktoberfest .Oktober-dos {
+      height: 350px;
+      bottom: 76%;
+      left: 50%;
+      width: 48%;
+      position: relative;
+      background-position: center;
+      display: block; }
+    .Oktoberfest .Oktober-uno {
+      height: 350px;
+      width: 48%;
+      position: relative;
+      background-position: center; }
+  .Experiencia-oktoberfest {
+    width: 90%;
+    margin-bottom: 50px; }
+  .San-patricio {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px; }
+    .San-patricio .Patricio-uno {
+      height: 350px;
+      width: 48%;
+      position: relative;
+      background-position: center;
+      display: block; }
+    .San-patricio .Patricio-dos {
+      height: 350px;
+      bottom: 76%;
+      left: 50%;
+      width: 48%;
+      position: relative;
+      background-position: center; }
+  .Experiencia-Sanpatricio {
+    width: 90%;
+    margin-bottom: 50px; } }
+
+/* estilos para pantallas de desktop -experiencias- */
+@media screen and (min-width: 1024px) {
+  .Patio-cervecero .Patio-uno {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px; }
+  .Patio-cervecero .Patio-dos {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px; }
+  .Octoberfest .Oktober-uno {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px; }
+  .Octoberfest .Oktober-dos {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px; }
+  .San-patricio .Patricio-uno {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px; }
+  .San-patricio .Patricio-dos {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px; } }
+
+.Nosotros-home p, .SanPatricio p, .PatioCervecero p {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  box-shadow: 2px 2px #003a00;
+  text-align: center;
+  padding: 5px; }
+
+.Nosotros-home .Nosotros .imgNosotros-home, .Experiencias-home .SanPatricio .imgSanPatricio-home {
+  margin: 5px;
+  background-position: center;
+  height: 320px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px #003a00; }
+
+.Nosotros, .Historia-santo .Santo-patrono {
+  height: 100%;
+  width: 100%; }
+
+.Experiencia-patio, .Experiencia-oktoberfest, .Experiencia-Sanpatricio {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  box-shadow: 2px 2px #003a00;
+  width: 90%;
+  text-align: center; }
+
+.Patio-cervecero .Patio-uno, .Patio-cervecero .Patio-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.Oktoberfest .Oktober-uno, .Oktoberfest .Oktober-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.San-patricio .Patricio-uno, .San-patricio .Patricio-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.Cervezas .producto-dos img, .Cervezas .producto-tres img {
+  height: 350px;
+  margin-top: 35px; }
+
+/*estilo para pantallas de celulares -Contactos-*/
+.Formulario {
+  margin-top: 50px;
+  align-items: center;
+  width: 350px;
+  height: 200px;
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 18px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid black;
+  border-radius: 5px; }
+
+.Formulario .Datos {
+  line-height: 2rem;
+  margin-inline: 0.5rem; }
+
+.Formulario .Datos .boton {
+  margin-top: 1rem; }
+
+.Subtitulo {
+  font-size: 2rem;
+  margin: 50px 0px; }
+
+.Encontranos p {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 18px;
+  background-color: rgba(0, 58, 0, 0.408);
+  width: 345px;
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  text-align: center; }
+
+/* estilos para pantallas de tablets -contacto- */
+@media screen and (min-width: 600px) {
+  .Formulario {
+    width: 500px; }
+  .Encontranos p {
+    width: 550px; }
+  .Tienda {
+    width: 95%; } }
+
+.Nosotros-home p, .SanPatricio p, .PatioCervecero p {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  box-shadow: 2px 2px #003a00;
+  text-align: center;
+  padding: 5px; }
+
+.Nosotros-home .Nosotros .imgNosotros-home, .Experiencias-home .SanPatricio .imgSanPatricio-home {
+  margin: 5px;
+  background-position: center;
+  height: 320px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px #003a00; }
+
+.Nosotros, .Historia-santo .Santo-patrono {
+  height: 100%;
+  width: 100%; }
+
+.Experiencia-patio, .Experiencia-oktoberfest, .Experiencia-Sanpatricio {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  border: 2px solid #003a00;
+  border-radius: 5px;
+  box-shadow: 2px 2px #003a00;
+  width: 90%;
+  text-align: center; }
+
+.Patio-cervecero .Patio-uno, .Patio-cervecero .Patio-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.Oktoberfest .Oktober-uno, .Oktoberfest .Oktober-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.San-patricio .Patricio-uno, .San-patricio .Patricio-dos {
+  margin: 5px;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; }
+
+.Cervezas .producto-dos img, .Cervezas .producto-tres img {
+  height: 350px;
+  margin-top: 35px; }
+
+/*estilos para pantallas de celulares -productos-*/
+.Cervezas {
+  background-color: rgba(0, 58, 0, 0.408);
+  text-align: center;
+  border: 2px solid #003a00;
+  box-shadow: 2px 2px #003a00;
+  padding: 2px;
+  width: 98%;
+  margin: 10px 0px; }
+
+.Cervezas p {
+  color: gold;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 58, 0, 0.408);
+  margin: 20px 20px;
+  border: 2px solid #003a00;
+  box-shadow: 2px 2px #003a00;
+  border-radius: 5px; }
+
+.Cervezas .producto-uno img {
+  margin-top: 10px; }
+
+.Cervezas .producto-cuatro img {
+  margin-top: 10px; }
+
+.producto-uno {
+  border-bottom: 2px solid #003a00; }
+
+.producto-dos {
+  border-bottom: 2px solid #003a00; }
+
+.producto-tres {
+  border-bottom: 2px solid #003a00; }
+
+.nombre-cerveza {
+  margin: 15px 100px;
+  color: gold; }
+
+/* estilos para pantallas de tablets -productos- */
+@media screen and (min-width: 600px) {
+  .Cervezas .producto-uno img {
+    position: relative;
+    right: 25%; }
+  .Cervezas .producto-dos img {
+    position: relative;
+    right: 25%; }
+  .Cervezas .producto-tres img {
+    position: relative;
+    right: 25%; }
+  .Cervezas .producto-cuatro img {
+    position: relative;
+    right: 25%; }
+  .nombre-cerveza {
+    text-align: start;
+    position: relative;
+    width: 50%;
+    left: 40%;
+    bottom: 270px; }
+  .Cervezas p {
+    width: 50%;
+    position: relative;
+    left: 45%;
+    bottom: 220px; } }

@@ -1,0 +1,64 @@
+//import//
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+// estilos generales//
+body{
+    @include fondo-pag;
+}
+.nav-color{
+    @include navcolor;
+}
+.logo-principal{
+    @include logotac;
+}
+.color-boton{
+    @include botoncolor;
+}
+.estilo-lista{
+    @include listastilo;
+}
+.estilo-lista:hover{
+    transform: scale(0.9);
+}
+h1{
+    @include donarnul-home;
+
+    animation-name: titulo;
+    animation-duration: 2s;
+}
+@keyframes titulo{
+    0%{
+        transform: translate(100%);
+    }
+}
+.Subtitulo{
+    @include subtitulos;
+
+    animation-name: subtitulos;
+    animation-duration: 5s;
+}
+@keyframes subtitulos{
+    0%{
+        transform: translate(100%);
+    }
+}
+.fixed{
+    position: $fixed;
+    bottom: 80px;
+    right: $veinte;
+}
+.pie-pagina{
+    @include piepagina;
+}
+.pie-pagina .Derechos{
+    width: $total;
+}
+.pie-pagina .iconos{
+    display: $no;
+}
+main{
+    @include main;
+}
+
+
+

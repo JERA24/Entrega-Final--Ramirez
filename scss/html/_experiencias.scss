@@ -1,0 +1,165 @@
+//import//
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+//estilos experiencias//
+/*estilo para pantallas de celulares -experiencias-*/
+.Patio-cervecero{
+    margin-top: $cinco;
+    width: 350px;
+    height: 320px;
+}
+.Patio-cervecero .Patio-uno{
+    @extend %patiocerveceroimg;
+    background-image: url(../img/patiocervecero-dos.png);
+    display: none;
+}
+.Patio-cervecero .Patio-dos{
+    @extend %patiocerveceroimg;
+    background-image: url(../img/patiocerveceroHome.png);
+}
+.Experiencia-patio{
+    @extend %experienciavarias;
+}
+.Oktoberfest{
+    margin-top: $cincuenta;
+    width: 350px;
+    height: 320px;
+}
+.Oktoberfest .Oktober-uno{
+    background-image: url(../img/october-fest-dos.png);
+    @extend %oktoberfestimg;
+} 
+
+.Oktoberfest .Oktober-dos{
+    background-image: url(../img/october-fest.png);
+    @extend %oktoberfestimg;
+    display: none;
+}
+.Experiencia-oktoberfest{
+    @extend %experienciavarias;
+}
+.San-patricio{
+    margin-top: $cincuenta;
+    width: 350px;
+    height: 320px;
+}
+.San-patricio .Patricio-uno{
+    background-image: url(../img/San-patrick1.png);
+    @extend %sanpatricioimg;
+    display: none;
+}
+.San-patricio .Patricio-dos{
+    background-image: url(../img/Sanpatricio-fiesta.png);
+    @extend %sanpatricioimg;
+}
+.Experiencia-Sanpatricio{
+    @extend %experienciavarias;
+}
+/* estilos para pantallas de tablets -experiencias- */
+
+@media screen and (min-width:600px){
+    .Patio-cervecero{
+        margin-top: $cincuenta;
+        width: $total;
+        height: 400px;
+        .Patio-uno{
+        height: 350px;
+        width: 48%;
+        position: relative;
+        background-position: $centrado;
+        display: $bloque;
+        }
+        .Patio-dos{
+        height: 350px;
+        bottom: 76%;
+        left: $mitad;
+        width: 48%;
+        position: relative;
+        background-position: $centrado;
+        }
+    }
+    .Experiencia-patio{
+        width: $total;
+        margin-bottom: $cincuenta;
+    }
+    .Oktoberfest{
+        margin-top: $cincuenta;
+        width: $total;
+        height: 400px;
+        .Oktober-dos{
+        height: 350px;
+        bottom: 76%;
+        left: 50%;
+        width: 48%;
+        position: relative;
+        background-position: $centrado;
+        display: block;
+        }
+        .Oktober-uno{
+        height: 350px;
+        width: 48%;
+        position: relative;
+        background-position: $centrado;
+        }
+    }
+    
+    .Experiencia-oktoberfest{
+        width: 90%;
+        margin-bottom: $cincuenta;
+    }
+    .San-patricio{
+        margin-top: $cincuenta;
+        width: $total;
+        height: 400px;
+        .Patricio-uno{
+        height: 350px;
+        width: 48%;
+        position: relative;
+        background-position: center;
+        display: block;
+        }
+        .Patricio-dos{
+        height: 350px;
+        bottom: 76%;
+        left: 50%;
+        width: 48%;
+        position: relative;
+        background-position: center;
+        }
+    }
+    .Experiencia-Sanpatricio{
+        width: 90%;
+        margin-bottom: $cincuenta;
+    }
+}
+/* estilos para pantallas de desktop -experiencias- */
+@media screen and (min-width:1024px){
+    .Patio-cervecero .Patio-uno{
+        border-top-left-radius: $cincuenta;
+        border-top-right-radius: $cincuenta;
+    }
+    .Patio-cervecero .Patio-dos{
+        border-top-left-radius: $cincuenta;
+        border-top-right-radius: $cincuenta;
+    }
+    .Octoberfest .Oktober-uno{
+        border-top-left-radius: $cincuenta;
+        border-top-right-radius: $cincuenta;
+    }
+    .Octoberfest .Oktober-dos{
+        border-top-left-radius: $cincuenta;
+        border-top-right-radius: $cincuenta;
+    }
+    .San-patricio .Patricio-uno{
+        border-top-left-radius: $cincuenta;
+        border-top-right-radius: $cincuenta;
+    }
+    .San-patricio .Patricio-dos{
+        border-top-left-radius: $cincuenta;
+        border-top-right-radius: $cincuenta;
+    }
+}
+
+

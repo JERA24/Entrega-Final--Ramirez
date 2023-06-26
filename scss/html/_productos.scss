@@ -1,0 +1,71 @@
+//import//
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+//estilos Productos//
+/*estilos para pantallas de celulares -productos-*/
+.Cervezas{
+    @include cervezas;
+
+}
+.Cervezas p{
+    @include cervezasp;
+}
+.Cervezas .producto-dos img{
+    @extend %cervezaimguno;
+}
+
+.Cervezas .producto-tres img{
+    @extend %cervezaimguno;
+}
+.Cervezas .producto-uno img{
+    margin-top: 10px;
+}
+.Cervezas .producto-cuatro img{
+    margin-top: 10px;
+}
+.producto-uno{
+    border-bottom: $borde;
+}
+.producto-dos{
+    border-bottom: $borde;
+}
+.producto-tres{
+    border-bottom: $borde;
+}
+.nombre-cerveza{
+    margin: 15px 100px;
+    color: $color-secundario-1;
+}
+/* estilos para pantallas de tablets -productos- */
+@media screen and (min-width:600px){
+    .Cervezas .producto-uno img{
+        position: relative;
+        right: 25%;
+    }
+    .Cervezas .producto-dos img{
+        position: relative;
+        right: 25%;
+    }
+    .Cervezas .producto-tres img{
+        position: relative;
+        right: 25%;
+    }
+    .Cervezas .producto-cuatro img{
+        position: relative;
+        right: 25%;
+    }
+    .nombre-cerveza{
+        text-align: start;
+        position: relative;
+        width: 50%;
+        left: 40%;
+        bottom: 270px;
+    }
+    .Cervezas p{
+        width: 50%;
+        position: relative;
+        left: 45%;
+        bottom: 220px;
+    }
+}

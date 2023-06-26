@@ -1,0 +1,156 @@
+//import//
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+//estilo Nosotros//
+/*estilo para pantallas de celulares -nosotros-*/
+.Banner-nosotros{
+   @include bannersanto;
+}
+.Banner-nosotros p{
+   @include bannersantop;
+}
+.Equipo-arnulfo .Duenios-arnulfo{
+    height: $total;
+    width: $total;
+}
+.Equipo-arnulfo .Duenios-arnulfo .Amigos{
+    background-image: url(../img/Creadores-amigos.png);
+    margin: $cinco;
+    height: 250px;
+    background-size: cover;
+    border-radius: $diez;
+    box-shadow: $sombra;
+}
+.Equipo-arnulfo p{
+    color: $color-secundario-1;
+    font-family: $tipografia;
+    font-size: $veinte;
+    background-color: $color-secundario-2;
+    border: $borde;
+    border-radius: $cinco;
+    text-align: $centrado;
+    margin: 10px 30px;
+    padding: $cinco;
+}
+.Relleno{
+    width: 90%;
+    height: $total;
+}
+.Relleno .Fabrica-dos p{
+    color: $color-secundario-1;
+    font-family: $tipografia;
+    font-size: 25px;
+    background-color: $color-secundario-2;
+    text-align: $centrado;
+    padding: $cinco;
+    border: $borde;
+    border-radius: $diez;
+    box-shadow: $sombra;
+    margin: 30px 15px;
+}
+.Equipo-arnulfo .Fabrica{
+    display: $no;
+}
+.Santo{
+    margin-top: 25px;
+}
+.Historia-santo .Santo-patrono{
+    @extend %tamañototal;
+}
+.Historia-santo .Santo-patrono .Img-arnulfo{
+    background-image: url(../img/Arnulfo-Tomando.png);
+    margin: $cinco;
+    height: 400px;
+    background-size: cover;
+    border-radius: $diez;
+    box-shadow: $sombra;
+}
+.Historia-santo p{
+    color: $color-secundario-1;
+    font-family: $tipografia;
+    font-size: $veinte;
+    background-color: $color-secundario-2;
+    border: $borde;
+    border-radius: $cinco;
+    text-align: $centrado;
+    margin: 10px 5px;
+}
+/*estilo para pantallas de tablets -nosotros- */
+
+@media screen and (min-width:600px){
+    .Equipo-arnulfo{
+        height: $total;
+        display: flex;
+        flex-flow: row;
+    }
+    .Equipo-arnulfo .Duenios-arnulfo{
+        width: $total;
+    }
+    .Equipo-arnulfo .Fabrica{
+        display: $bloque;
+        width: $total;
+    }
+    .Equipo-arnulfo .Duenios-arnulfo .Amigos{
+        background-position: $centrado;
+        height: 350px;
+        border-top-left-radius: $cincuenta;
+        border-top-right-radius: $cincuenta;
+        box-shadow: $sombra;
+    }
+    .Equipo-arnulfo .Fabrica .Fabrica-uno{
+        background-position: center;
+        background-image: url(../img/nosotrosHome.jpg);
+        margin: $cinco;
+        height: 350px;
+        background-size: cover;
+        border-top-left-radius: $cincuenta;
+        border-top-right-radius: $cincuenta;
+        box-shadow: $sombra;
+    }
+    .Relleno .Fabrica-dos .Relajate{
+        background-position: center;
+        background-image: url(../img/fabrica2.png);
+        margin-top: 170px;
+        background-size: cover;
+        border-radius: $diez;
+        box-shadow: $sombra;
+    }
+    .Relleno .Fabrica-dos p{
+        margin-top: $cinco;
+    }
+    .Historia-santo{
+        height: $total;
+        align-items: center;
+    }
+    .Historia-santo p{
+        width: 500px;
+    }
+    .Historia-santo .Santo-patrono .Img-arnulfo{
+        margin: $cinco;
+        height: 400px;
+        width: 100%;
+        border-radius: $diez;
+        box-shadow: $sombra;
+    }
+}
+
+/* estilos para pantallas de desktop -nosotros- */
+
+@media screen and (min-width:1024px){
+    .Banner-nosotros{
+        height: 750px;
+        background-position: top;
+    }
+    .Banner-nosotros p{
+        margin-top: 700px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .Equipo-arnulfo{
+        height: 600px;
+    }
+    .Relleno .Fabrica-dos .Relajate{
+        height: 450px;
+    }
+}

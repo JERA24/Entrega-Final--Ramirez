@@ -1,0 +1,44 @@
+//import//
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+//estilos Contactos//
+/*estilo para pantallas de celulares -Contactos-*/
+.Formulario{
+    @include formulario;
+}
+.Formulario .Datos{
+    line-height: 2rem;
+    margin-inline: 0.5rem;
+}
+.Formulario .Datos .boton{
+    margin-top: 1rem;
+}
+.Subtitulo{
+    font-size: 2rem;
+    margin: 50px 0px;
+}
+.Encontranos p{
+    color: $color-secundario-1;
+    font-family: $tipografia;
+    font-size: 18px;
+    background-color: $color-secundario-2;
+    width: 345px;
+    border: $borde;
+    border-radius: $cinco;
+    text-align: $centrado;
+}
+/* estilos para pantallas de tablets -contacto- */
+@media screen and (min-width:600px){
+    .Formulario{
+        width: 500px;
+    }
+    .Encontranos p{
+        width: 550px;
+    }
+    .Tienda{
+        width: 95%;
+    }
+}
+

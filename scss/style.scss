@@ -1,0 +1,20 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilos generales*/
+//import//
+@import "../scss/html/generales";
+//estilo Home//
+@import "../scss/html/home";
+//estilo Nosotros//
+@import "../scss/html/nosotros";
+//estilo Experiencias//
+@import "../scss/html/experiencias";
+//estilo Contactos//
+@import "../scss/html/contatos";
+//estilo Productos//
+@import "../scss/html/productos";
+
